@@ -1,0 +1,579 @@
+.attendance-page {
+  padding-top: 8px;
+}
+
+.attendance-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 28px;
+}
+
+.attendance-title-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.attendance-title-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #4f46e5
+  );
+}
+
+.attendance-title-row h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.attendance-title-row p {
+  color: #9ca5b8;
+}
+
+.mark-attendance-btn {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 13px 20px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #5b21b6
+  );
+
+  color: white;
+  font-weight: 600;
+}
+
+/* Stats */
+
+.attendance-stats {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 18px;
+
+  margin-bottom: 22px;
+}
+
+.attendance-stat-card {
+  padding: 22px;
+
+  background: #11172a;
+
+  border: 1px solid #252d43;
+  border-radius: 16px;
+}
+
+.attendance-stat-card span {
+  color: #aab3c8;
+  font-size: 14px;
+}
+
+.attendance-stat-card h2 {
+  font-size: 34px;
+  margin: 8px 0;
+}
+
+.attendance-stat-card p {
+  color: #667085;
+  font-size: 13px;
+}
+
+/* Percentage */
+
+.percentage-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 20px 22px;
+
+  background: #11172a;
+
+  border: 1px solid #252d43;
+  border-radius: 16px;
+
+  margin-bottom: 22px;
+}
+
+.percentage-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.percentage-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #2563eb
+  );
+}
+
+.percentage-info h2 {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.percentage-info p {
+  color: #8f98ad;
+  font-size: 13px;
+}
+
+.percentage-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.percentage-actions select {
+  width: 230px;
+
+  padding: 11px 12px;
+
+  background: #0c1222;
+
+  border: 1px solid #2c3550;
+  border-radius: 9px;
+
+  color: white;
+}
+
+.percentage-actions button {
+  padding: 11px 16px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: #7c3aed;
+  color: white;
+}
+
+.percentage-result {
+  min-width: 90px;
+
+  padding: 11px 16px;
+
+  border-radius: 9px;
+
+  background: rgba(
+    16,
+    185,
+    129,
+    0.15
+  );
+
+  border: 1px solid rgba(
+    16,
+    185,
+    129,
+    0.3
+  );
+
+  color: #5ee0ad;
+
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Main Card */
+
+.attendance-card {
+  background: #11172a;
+
+  border: 1px solid #252d43;
+  border-radius: 16px;
+
+  overflow: hidden;
+}
+
+.attendance-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 22px;
+
+  border-bottom: 1px solid #252d43;
+}
+
+.attendance-card-header h2 {
+  font-size: 18px;
+}
+
+.attendance-card-header p {
+  color: #8f98ad;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.attendance-search {
+  width: 330px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 11px 14px;
+
+  background: #0d1324;
+
+  border: 1px solid #2a334d;
+  border-radius: 9px;
+
+  color: #8f98ad;
+}
+
+.attendance-search input {
+  flex: 1;
+
+  background: transparent;
+  border: none;
+  outline: none;
+
+  color: white;
+}
+
+/* Table */
+
+.attendance-table-head,
+.attendance-table-row {
+  display: grid;
+
+  grid-template-columns:
+    2fr
+    1.5fr
+    1.2fr
+    1fr
+    0.8fr;
+
+  align-items: center;
+
+  padding: 16px 22px;
+}
+
+.attendance-table-head {
+  background: #151c30;
+
+  color: #9ca5b8;
+  font-size: 13px;
+}
+
+.attendance-table-row {
+  border-top: 1px solid #252d43;
+}
+
+.attendance-table-row:hover {
+  background: #151b2e;
+}
+
+.attendance-student-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.attendance-avatar {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #2563eb
+  );
+
+  font-weight: bold;
+}
+
+.attendance-student-cell div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.attendance-student-cell small {
+  color: #7e879d;
+}
+
+.attendance-course-cell {
+  color: #c9cfdd;
+}
+
+/* Status */
+
+.attendance-status {
+  width: fit-content;
+
+  padding: 7px 12px;
+
+  border-radius: 8px;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.present-status {
+  color: #5ee0ad;
+
+  background: rgba(
+    16,
+    185,
+    129,
+    0.12
+  );
+}
+
+.absent-status {
+  color: #fb7185;
+
+  background: rgba(
+    244,
+    63,
+    94,
+    0.12
+  );
+}
+
+/* Actions */
+
+.attendance-actions {
+  display: flex;
+  gap: 9px;
+}
+
+.attendance-edit-btn,
+.attendance-delete-btn {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #171e33;
+
+  border: 1px solid #2c3550;
+  border-radius: 8px;
+}
+
+.attendance-edit-btn {
+  color: #9d7cff;
+}
+
+.attendance-delete-btn {
+  color: #fb7185;
+}
+
+/* Empty */
+
+.empty-attendance {
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  color: #778198;
+}
+
+.empty-attendance h3 {
+  color: white;
+}
+
+/* Modal */
+
+.attendance-modal-overlay {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.72);
+
+  backdrop-filter: blur(5px);
+
+  z-index: 100;
+}
+
+.attendance-modal {
+  width: 480px;
+
+  padding: 26px;
+
+  background: #11172a;
+
+  border: 1px solid #303956;
+  border-radius: 18px;
+}
+
+.attendance-modal-header {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 25px;
+}
+
+.attendance-modal-header h2 {
+  font-size: 22px;
+  margin-bottom: 7px;
+}
+
+.attendance-modal-header p {
+  color: #8993a8;
+}
+
+.close-attendance-modal {
+  background: transparent;
+  border: none;
+
+  color: #aeb7c9;
+}
+
+.attendance-form-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 9px;
+
+  margin-bottom: 18px;
+}
+
+.attendance-form-group label {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #c7cede;
+}
+
+.attendance-form-group select {
+  width: 100%;
+
+  padding: 13px;
+
+  background: #0c1222;
+
+  border: 1px solid #2c3550;
+  border-radius: 9px;
+
+  color: white;
+}
+
+.attendance-modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 12px;
+
+  margin-top: 28px;
+}
+
+.cancel-attendance-btn,
+.save-attendance-btn {
+  padding: 12px 20px;
+
+  border-radius: 9px;
+
+  font-weight: 600;
+}
+
+.cancel-attendance-btn {
+  background: #1a2135;
+
+  border: 1px solid #303956;
+
+  color: #cbd2df;
+}
+
+.save-attendance-btn {
+  border: none;
+
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #5b21b6
+  );
+
+  color: white;
+}
+
+@media (max-width: 1000px) {
+
+  .attendance-top,
+  .attendance-card-header,
+  .percentage-card {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 18px;
+  }
+
+  .attendance-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .attendance-search {
+    width: 100%;
+  }
+
+  .percentage-actions {
+    width: 100%;
+
+    flex-wrap: wrap;
+  }
+
+  .percentage-actions select {
+    width: 100%;
+  }
+}

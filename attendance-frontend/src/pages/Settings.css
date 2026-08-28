@@ -1,0 +1,160 @@
+.settings-heading {
+  margin-bottom: 30px;
+}
+
+.settings-heading h1 {
+  font-size: 30px;
+}
+
+.settings-heading p {
+  margin-top: 8px;
+  opacity: 0.6;
+}
+
+.settings-container {
+  max-width: 800px;
+}
+
+.settings-card {
+  padding: 25px;
+
+  margin-bottom: 20px;
+
+  border: 1px solid;
+  border-radius: 14px;
+}
+
+.dark-theme .settings-card {
+  background: #11182a;
+  border-color: #273148;
+}
+
+.light-theme .settings-card {
+  background: white;
+  border-color: #e0e5ee;
+}
+
+.settings-card h2 {
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+
+  padding: 13px 15px;
+
+  border-radius: 10px;
+  border: 1px solid;
+
+  outline: none;
+
+  font-size: 14px;
+}
+
+.dark-theme .form-group input {
+  background: #0b1120;
+  color: white;
+  border-color: #2d3850;
+}
+
+.light-theme .form-group input {
+  background: white;
+  color: #222;
+  border-color: #dce1ea;
+}
+
+.setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.setting-row h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.setting-row p {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+/* TOGGLE */
+
+.switch {
+  position: relative;
+
+  width: 52px;
+  height: 28px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: #64748b;
+
+  border-radius: 30px;
+
+  transition: 0.3s;
+}
+
+.slider::before {
+  content: "";
+
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+
+  left: 4px;
+  top: 4px;
+
+  background: white;
+
+  border-radius: 50%;
+
+  transition: 0.3s;
+}
+
+.switch input:checked + .slider {
+  background: #7257ff;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(24px);
+}
+
+.save-settings-btn {
+  padding: 14px 25px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #7257ff;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+}

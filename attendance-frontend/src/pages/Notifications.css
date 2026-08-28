@@ -1,0 +1,102 @@
+.notifications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.notifications-header h1 {
+  font-size: 30px;
+}
+
+.notifications-header p {
+  margin-top: 8px;
+  opacity: 0.6;
+}
+
+.notifications-header button {
+  padding: 12px 18px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #7257ff;
+  color: white;
+}
+
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.notification-card {
+  position: relative;
+
+  display: flex;
+  gap: 18px;
+
+  padding: 22px;
+
+  border: 1px solid;
+  border-radius: 14px;
+
+  transition: 0.2s;
+}
+
+.dark-theme .notification-card {
+  background: #11182a;
+  border-color: #273148;
+}
+
+.light-theme .notification-card {
+  background: white;
+  border-color: #e0e5ee;
+}
+
+.notification-card.unread {
+  border-left: 4px solid #7257ff;
+}
+
+.notification-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(114, 87, 255, 0.15);
+
+  border-radius: 12px;
+
+  font-size: 24px;
+}
+
+.notification-content h3 {
+  margin-bottom: 6px;
+}
+
+.notification-content p {
+  opacity: 0.65;
+  margin-bottom: 8px;
+}
+
+.notification-content small {
+  opacity: 0.45;
+}
+
+.unread-dot {
+  position: absolute;
+
+  right: 22px;
+  top: 30px;
+
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  background: #7257ff;
+}
